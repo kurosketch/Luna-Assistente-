@@ -1,0 +1,43 @@
+# plugins/weather_plugin.py
+class WeatherPlugin:
+    def __init__(self):
+        self.name = "Previsão do Tempo"
+    
+    def execute(self, command):
+        if "tempo" in command or "clima" in command:
+            # Integrar com API de previsão
+            return "O tempo hoje está ensolarado!"
+        return None
+
+# Adicionar no main.py
+self.plugins = []
+self.load_plugins()
+
+def load_plugins(self):
+    """Carrega plugins dinamicamente"""
+    plugins_dir = 'plugins'
+    if os.path.exists(plugins_dir):
+        for file in os.listdir(plugins_dir):
+            if file.endswith('.py') and file != '__init__.py':
+                # Carregar plugin dinamicamente
+                pass
+
+ class LearningSystem:
+    def __init__(self):
+        self.memory_file = 'data/learning.json'
+        self.patterns = {}
+        self.load_memory()
+    
+    def learn_response(self, user_input, luna_response):
+        """Aprende novo padrão de resposta"""
+        key = self.normalize_text(user_input)
+        if key not in self.patterns:
+            self.patterns[key] = []
+        
+        self.patterns[key].append({
+            'response': luna_response,
+            'timestamp': time.time(),
+            'count': 1
+        })
+        
+        self.save_memory()           

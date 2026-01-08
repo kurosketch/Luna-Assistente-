@@ -1,0 +1,12 @@
+# 1. Instale Python 3.8 ou superior
+# 2. Crie um ambiente virtual (opcional)
+python -m venv venv
+venv\Scripts\activate  # Windows
+# ou
+source venv/bin/activate  # Linux/Mac
+
+# 3. Instale as dependências
+pip install -r requirements.txt
+
+# 4. Execute o sistema
+python main.py

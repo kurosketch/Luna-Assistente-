@@ -1,0 +1,47 @@
+{
+  "luna": {
+    "name": "Luna",
+    "version": "1.0.0",
+    "active": true,
+    "auto_start": false,
+    "always_on_top": true
+  },
+  "voice": {
+    "voice_recognition": true,
+    "voice_synthesis": true,
+    "language": "pt-BR",
+    "wake_word": "luna",
+    "record_unknown_voices": true
+  },
+  "animation": {
+    "auto_animations": true,
+    "particles": true,
+    "physics": false,
+    "shadows": false,
+    "mouse_interaction": true,
+    "animation_style": "gota"
+  },
+  "emotions": {
+    "base_love": 50,
+    "max_love": 100,
+    "recognition_enabled": true,
+    "emotional_memory": true
+  },
+  "system": {
+    "monitor_usb": true,
+    "monitor_drivers": true,
+    "auto_backup": true,
+    "check_updates": true,
+    "detailed_logs": false
+  },
+  "alexa": {
+    "enabled": false,
+    "alexa_name": "Alexa",
+    "port": 8765
+  },
+  "mobile": {
+    "enabled": false,
+    "server_port": 8888,
+    "allow_remote": false
+  }
+}
